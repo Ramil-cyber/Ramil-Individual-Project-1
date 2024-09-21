@@ -1,17 +1,16 @@
 install:
-	pip install --upgrade pip && pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 format:
-	black *.py
-
+	black src/*.py
+	black test/*.py
+test_code:
+	pytest -vv --nbval -cov=my_lib -cov=main test/test_*.py *.ipynb
 lint:
-	ruff check *.py
-
+	ruff check src/*.py
+	ruff check test/*.py
 container-lint:
 	docker run --rm -i hadolint/hadolint < .devcontainer/Dockerfile
-
-test:
-	python -m pytest -vv --nbval -cov=my_lib -cov=main test_*.py *.ipynb
 
 all: install format lint container-lint test 
 
