@@ -19,6 +19,7 @@ This project demonstrates the setup of continuous integration for a Python data 
 - `test_script.py`: Contains tests for a standalone script.
 - `test_lib.py`: Tests the shared code in `lib.py`.
 - `lib.py`: Shared utility code used in both the notebook and scripts.
+- `main.py`: More advanced code built on the top of `lib.py`
 
 ### 3. **Makefile**
 The `Makefile` includes the following commands:
@@ -34,7 +35,7 @@ A pinned list of dependencies for the project to ensure consistent environments 
 ---
 
 ## Github Actions
-Tasks from the Makefile are automated using Gitlab CI/CD pipelines. The github worflows have following jobs that:
+Tasks from the Makefile are automated using Github CI/CD pipelines. The github worflows have following jobs that:
 - Run tests on the Jupyter Notebook, scripts, and library.
 - Format the code using **black**.
 - Lint the code using **Ruff**.
@@ -68,6 +69,3 @@ make install
   ```bash
   make lint
   ```
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
