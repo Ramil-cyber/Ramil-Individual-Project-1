@@ -1,11 +1,19 @@
 import pandas as pd
-from lib import (
-    get_summary,
-    get_histogram,
-    get_line_graph,
-    get_correlation_matrix,
-)
 
+try:
+    from lib import (
+        get_summary,
+        get_histogram,
+        get_line_graph,
+        get_correlation_matrix,
+    )
+except Exception:
+    from src.lib import (
+        get_summary,
+        get_histogram,
+        get_line_graph,
+        get_correlation_matrix,
+    )
 
 remote_path = "https://raw.githubusercontent.com/Ramil-cyber/Ramil-Individual-Project-1/refs/heads/main/data/shanghai_ranking_2024.csv"
 
