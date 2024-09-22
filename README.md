@@ -7,7 +7,7 @@
 - **Linting**: [![Run Lint](https://github.com/nogibjj/Ramil-Individual-Project-1/actions/workflows/lint.yaml/badge.svg)](https://github.com/nogibjj/Ramil-Individual-Project-1/actions/workflows/lint.yaml)
 
 ## Project Overview
-This project demonstrates the setup of continuous integration for a Python data science project using Gitlab CI/CD pipelines. It includes a Jupyter Notebook performing descriptive statistics with Pandas, test scripts and jupyter notebook, a shared library, and a Makefile to automate tasks such as formatting, linting, and testing. Gitlab Actions run these tasks, with badges reflecting their status.
+This project demonstrates the setup of continuous integration for a Python data science project using Github CI/CD pipelines. It includes a Jupyter Notebook performing descriptive statistics with Pandas, test scripts and jupyter notebook, a shared library, and a Makefile to automate tasks such as formatting, linting, and testing. Github Actions run these tasks, with badges reflecting their status.
 
 ---
 
