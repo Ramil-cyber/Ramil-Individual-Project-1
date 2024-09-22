@@ -1,4 +1,4 @@
-name: RamilIndividualProject1_GithubActions
+name: Create Environment
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build-and-test:
+  create-environment:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,12 +23,3 @@ jobs:
 
       - name: Create environment 
         run: make install
-
-      - name: Format the code
-        run: make format
-
-      - name: Run Lint
-        run: make lint
-
-      - name: Run tests
-        run: make test_code
