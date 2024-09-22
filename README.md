@@ -33,7 +33,7 @@ A pinned list of dependencies for the project to ensure consistent environments 
 
 ---
 
-## Gitlab Actions
+## Github Actions
 Tasks from the Makefile are automated using Gitlab CI/CD pipelines. The github worflows have following jobs that:
 - Run tests on the Jupyter Notebook, scripts, and library.
 - Format the code using **black**.
